@@ -1,0 +1,194 @@
+/* ======================
+        common css
+======================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+ul{
+    list-style: none;
+
+}
+/* ===============
+    Card design
+================= */
+.card_heading{
+    width: 1100px;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 5px;
+
+}
+.card_heading ul{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+.card_heading ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px;
+    position: relative;
+}
+.card_heading ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.card_heading ul li a:hover:after{
+    width: 100%;
+}
+
+.card_heading ul li a:hover{
+    color: red;
+}
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    max-width: 1100px;
+    margin: auto;
+    border-top: 1px solid #d1d1d2;
+    padding: 20px 30px;
+    background: #FAF9FD;
+    position: relative;
+}
+.arrow{
+    font-size: 30px;
+    padding: 3px;
+    color: #ababad;
+    border: 1px solid rgba(255, 0, 0, 0.884);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.arrow:hover{
+    color: #fff;
+    background: rgba(255, 0, 0, 0.884);
+    cursor: pointer;
+}
+.fa-chevron-left{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+}
+.fa-chevron-right{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+}
+.card_item{
+    width: 325px;
+    margin: 0 auto;
+    border: 1px solid #d1d1d2;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: 1px 1px 7px #797878;
+}
+.card_item:hover{
+    box-shadow: none;
+}
+
+.card_item img{
+    display: block;
+    width: 324px;
+    border-radius: 25px 25px 0px 0px;
+    -webkit-border-radius: 25px 25px 0px 0px;
+    -moz-border-radius: 25px 25px 0px 0px;
+    -ms-border-radius: 25px 25px 0px 0px;
+    -o-border-radius: 25px 25px 0px 0px;
+}
+.item_content{
+    padding: 15px;
+}
+.item_content a h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.item_content h6{
+    color: #DF6812;
+    font-size: 14px;
+    font-weight: 700;
+}
+.item_content ul li{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+    color: #787a82;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.item_content ul li .fa{
+    font-size: 13px;
+}
+.item_content ul li .checked{
+    color: #ff9f43;
+}
+
+.item_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+}
+.item_footer .price{
+    font-size: 16px;
+    font-weight: 700;
+}
+.item_footer a.btn{
+    color: #FF1E1E;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #ff7e31;
+    padding: 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.item_footer a.btn:hover{
+    background: #FF7E31;
+    color: #fff;
+}
